@@ -1,0 +1,57 @@
+[user]
+    email = jero.carrizo@gmail.com
+    name = Jero
+
+[alias]
+
+    st = status
+    ci = commit
+    co = checkout
+    br = branch
+    df = diff
+    lg = log -p
+    who = shortlog -s --
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    unstage = reset HEAD --
+    last = log -1 HEAD
+    who = shortlog --numbered --summary --email --no-merges --since="3 months"
+
+[color]
+
+    diff = auto
+    status = auto
+    branch = auto
+    interactive = auto
+    ui = true
+    pager = true
+
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+
+[color "status"]
+    added = green
+    changed = yellow
+    untracked = cyan
+
+[http]
+
+[url "https://github.com/"]
+    insteadOf = git://github.com/
+[credential]
+	helper = wincred
+
+[pretty]
+# tut: http://gitimmersion.com/lab_10.html
+# ref: http://linux.die.net/man/1/git-log
+# Result: <short-sha> <commit-message> (<pointer-names>) -- <commit-author-name>; <relative-time>
+nice = "%C(yellow)%h%C(reset) %C(white)%s%C(cyan)%d%C(reset) -- %an; %ar"
+
