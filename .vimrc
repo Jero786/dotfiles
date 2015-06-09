@@ -15,8 +15,8 @@ if has("autocmd")
 	filetype indent on
 	filetype plugin on
 	autocmd FileType make setlocal ts=4 sts=4 sw=4 noexpandtab
-" 	autocmd BufWritePre *.css,*.html,*.json,*.md,*.php,*.py,*.rb,*.scss,*.sh,*.txt :call StripTrailingWhitespace()
-" 	autocmd BufRead,BufNewFile *.json set filetype=json
+"	autocmd BufWritePre *.css,*.html,*.json,*.md,*.php,*.py,*.rb,*.scss,*.sh,*.txt :call StripTrailingWhitespace()
+"	autocmd BufRead,BufNewFile *.json set filetype=json
 endif
 
 if has("cmdline_info")
@@ -121,15 +121,16 @@ set cursorline
 set scrolloff=3
 " Don’t reset cursor to start of line when moving around.
 set nostartofline
+
 " Show 'invisible' characters
-set list
-set autoindent
-set smartindent
+" set list
+" set autoindent
+" set smartindent
 
 " Set characters used to indicate 'invisible' characters
-set listchars=tab:▸\
-set listchars+=trail:·
-set listchars+=nbsp:_
+" set listchars=tab:▸\
+" set listchars+=trail:·
+" set listchars+=nbsp:_
 
 " Centralize backups, swapfiles and undo history
 
@@ -139,7 +140,7 @@ set directory=$HOME/.vim/swaps
 set undodir=$HOME/.vim/undo
 set viminfo+=n$HOME/.vim/.viminfo
 " Strip trailing whitespace (,$)
-noremap <leader>$ :call StripTrailingWhitespace()<CR>
+" noremap <leader>$ :call StripTrailingWhitespace()<CR>
 " Faster viewport scrolling (3 lines at a time)
 
 " nnoremap <C-e> 3<C-e>
