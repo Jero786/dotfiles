@@ -1,5 +1,8 @@
 cd ~/.
-sudo chown -R $USER_HOME .
+# sudo chown -R $USER_HOME .
+# chown -R $USER ~/.npm
+# sudo chown -R $USER .
+# sudo chown -R $USER /usr/local
 
 echo  'export HOME=/home/' + $USER_HOME >> ~/.bashrc
 echo  'export TERM="xterm-256color' >> ~/.bashrc
