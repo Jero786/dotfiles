@@ -16,7 +16,7 @@
     unstage = reset HEAD --
     last = log -1 HEAD
     who = shortlog --numbered --summary --email --no-merges --since="3 months"
-
+    diff = diff --word-diff
 [color]
 
     diff = auto
